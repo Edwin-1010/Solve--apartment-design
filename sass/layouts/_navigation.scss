@@ -1,0 +1,47 @@
+.navigation {
+  padding: 1rem 6rem;
+  font-family: $secondary-font;
+  font-weight: 400;
+  
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--action {
+      font-size: 1.8rem;
+      color: $color-white;
+    }
+    li a {
+      font-size: 1.6rem;
+      line-height: 175%;
+      letter-spacing: 0.09em;
+      font-weight: 400;
+      color: $color-white;
+      width: 100%;
+    }
+    &--logo {
+      width: 9.4rem;
+      img {
+        width: 100%;
+      }
+    }
+    &--nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+    }
+    &--items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &--icon {
+        height: 15rem;
+        width: 5rem;
+        color: $color-white;
+      }
+    }
+  }
+}

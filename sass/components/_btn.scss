@@ -1,0 +1,30 @@
+.btn{
+    display: inline-block;
+    background-color: transparent;
+    font-size: 2rem;
+    font-family: $secondary-font;
+    color: $color-white;
+    padding: 2.4rem 4rem 2.4rem 4rem;
+    border: $color-white 1px solid;
+    border-radius: 5rem;
+}
+
+.btn-white{
+    display: inline-block;
+    background-color: transparent;
+    font-size: 2rem;
+    font-family: $secondary-font;
+    margin-top: 6rem;
+    color: $color-border;
+    padding: 2.4rem 4rem 2.4rem 4rem;
+    border: $color-border 1px solid;
+    border-radius: 5rem;
+}
+.link{
+    display: inline-block;
+    font-size: 2rem;
+    font-family: $secondary-font;
+    text-decoration: none;
+    color: $color-border;
+
+}

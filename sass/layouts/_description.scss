@@ -1,0 +1,20 @@
+.description{
+    background-image: url(/assets/images/Group\ 1.jpg);
+    height: 100vh;
+    background-position: left;
+    position: relative;
+    &__wrapper{
+        padding: 2rem 2rem;
+      
+        &--composition{
+            @include absCenter;
+            width: 88rem;
+            display: block;
+            // height: 87rem;
+            img{
+                width: 100%;
+            }
+        }
+    }
+ 
+}
