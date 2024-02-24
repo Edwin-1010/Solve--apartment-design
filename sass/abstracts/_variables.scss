@@ -2,8 +2,9 @@ $color-background: #cecece;
 $color-white: #ffffff;
 $color-accent: #DCCA87;
 $color-border: #343339;
-;
+
 $color-grey-1: #aaaaaa;
 
+$color-gradient:linear-gradient(90deg, $color-white 0%, $color-white 50%, transparent 50%, transparent 0%);
 $primary-font: 'New york';
 $secondary-font:'Cabinet Grotesk';

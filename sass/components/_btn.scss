@@ -13,8 +13,8 @@
 .btn:active,
 .btn:hover {
   border: $color-border 2px solid;
-  background-color: #fff;
-  color: $color-border;
+  background-image: $color-gradient;
+  color: $color-grey-1;
   transition: all 0.1s ease-in;
 }
 
@@ -35,12 +35,12 @@
 .btn-white:hover {
   border: $color-border 2px solid;
   transition: all 0.1s ease-in;
-  background-color: $color-border;
+  background-image: color;
   color: $color-white;
 }
 .link,
 .link :link,
-.link:visited{
+.link:visited {
   display: inline-block;
   font-size: 2rem;
   font-family: $secondary-font;
@@ -48,6 +48,6 @@
   color: $color-border;
 }
 .link:active,
-.link:hover{
-    color: $color-grey-1;
+.link:hover {
+  color: $color-grey-1;
 }
