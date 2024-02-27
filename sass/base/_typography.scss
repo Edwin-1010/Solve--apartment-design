@@ -34,15 +34,27 @@ color: $color-border;
   font-family: $primary-font;
 }
 .heading-tertiary{
-  font-size: 6.4rem;
+  font-size:  6vh ;
   color: $color-white;
   line-height: 1.2;
   text-align: center;
+  @include respond(tab-port){
+    font-size: 10rem;
+  }
+  @include respond(big-phone){
+    font-size: 8rem;
+  }
+  @include respond(phone){
+    font-size: 5rem;
+  }
 }
 .heading-university{
-  font-size: 9.6rem;
+  font-size: 8vh;
   color: $color-border;
   font-family: $primary-font;
+  @include respond(tab-land) {
+    text-align: center;
+   }
 }
 .paragraph{
   color: $color-border;
