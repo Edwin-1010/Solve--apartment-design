@@ -12,7 +12,6 @@
 }
 .btn:active,
 .btn:hover {
-  border: $color-border 2px solid;
   background-image: $color-gradient;
   color: $color-grey-1;
   transition: all 0.1s ease-in;
@@ -35,8 +34,8 @@
 .btn-white:hover {
   border: $color-border 2px solid;
   transition: all 0.1s ease-in;
-  background-image: color;
-  color: $color-white;
+
+  
 }
 .link,
 .link :link,
@@ -50,4 +49,16 @@
 .link:active,
 .link:hover {
   color: $color-grey-1;
+}
+.image-link,
+.image-link:link,
+.image-link:visited {
+  display: inline-block;
+ border-radius: 50%;
+  
+}
+.image-link:active,
+.image-link:hover {
+
+  transition: all 0.1s ease-in;
 }

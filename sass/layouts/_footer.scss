@@ -1,3 +1,75 @@
-.footer{
-    
+.footer {
+  &__wrapper {
+    background-color: $color-white;
+    padding: 12.5rem 15rem;
+    @include respond(tab-land) {
+      padding: 5rem 5rem;
+    }
+    @include respond(tab-port) {
+      padding: 7rem 7rem;
+    }
+    @include respond(big-phone) {
+      padding: 3rem 3rem;
+    }
+    &--row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-items: center;
+      @include respond(tab-land) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      @include respond(tab-port) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @include respond(sm-phone) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      }
+      &--col {
+        @include respond(tab-land) {
+          margin-top: 4rem;
+        }
+        @include respond(tab-port) {
+          margin-top: 4rem;
+        }
+        @include respond(sm-phone) {
+         margin-top: 6rem;
+         text-align: center;
+          }
+        h3 {
+          font-size: 3.6rem;
+          letter-spacing: 1.6px;
+          margin-bottom: 5rem;
+          color: $color-border;
+          text-transform: capitalize;
+          @include respond(big-phone) {
+              font-size: 3rem;
+              margin-bottom: 4rem;
+          }
+        
+        }
+        ul {
+          text-align: center;
+          text-transform: uppercase;
+        }
+        a {
+          display: inline-block;
+          font-size: 1.6rem;
+          font-family: $secondary-font;
+          margin-bottom: 2rem;
+          color: $color-border;
+          text-align: center;
+          cursor: pointer;
+          letter-spacing: 1.9px;
+          @include respond(tab-land) {
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+         
+          }
+        
+        }
+      }
+    }
+  }
 }
