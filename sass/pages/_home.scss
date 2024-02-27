@@ -60,7 +60,6 @@
 }
 
 .description {
-  display: none;
   background-image: url(/assets/images/composition.jpg);
   height: 100vh;
   background-size: cover;
@@ -71,9 +70,12 @@
 
     &--composition {
       @include absCenter;
-      width: 88rem;
-      display: block;
-      // height: 87rem;
+      width: 50vw;
+
+      
+    @include respond(big-phone) {
+   
+    }
       img {
         width: 100%;
       }
