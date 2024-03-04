@@ -1,0 +1,96 @@
+.hero{
+
+    padding: 9.6rem 16rem;
+    @include respond(tab-port) {
+      padding: 3rem 4rem;
+       }
+    &__wrapper{
+      display: grid;
+      grid-template-columns: 1.5fr 2.5fr;
+
+      @include respond(tab-port) {
+       grid-template-columns: 1fr;
+    
+        
+       }
+        &--text-wrapper{
+            
+            h1{
+                margin-bottom: 4rem;
+                @include respond(tab-port) {
+                   margin-top: 5rem;
+                   }
+            }
+        }
+        a{
+            display: inline-block;
+            justify-self: flex-end;
+            align-self: flex-end;
+            @include respond(tab-port) {
+                margin-top: 5rem;
+                justify-self: flex-start;
+                }
+        }
+    }
+    
+    &__composition{
+            // height: 130vh;
+            background-size: cover;
+            margin-top: 5rem;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
+    .info {
+        padding: 12.8rem 26.1rem 20.7rem 25.9rem;
+        background-color: $color-white;
+        @include respond(tab-land) {
+          padding: 4rem 12rem;
+        }
+        @include respond(tab-port) {
+          padding: 4rem 9rem;
+        }
+        @include respond(big-phone) {
+          padding: 4rem 5rem;
+        }
+        &__wrapper {
+          display: grid;
+          grid-template-columns: 1.5fr 1.5fr;
+          gap: 8rem;
+      
+          @include respond(big-phone) {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            // justify-content: center;
+            // align-items: center;
+            br{
+              // display: none;
+            }
+          }
+        }
+      }
+      .next{
+        padding: 21rem 6rem;
+        &__wrapper{
+         
+            h1{
+                color: $color-border;
+                position: absolute;
+                top: -22%;
+            left: 9%;
+            }
+            .composition{
+                margin: 0 auto;
+                position: relative;
+                width: 60rem;
+                height: 60rem;
+                img{
+                   width: 100%;
+                   border-radius: 50%;
+                }
+            }
+        }
+      }
