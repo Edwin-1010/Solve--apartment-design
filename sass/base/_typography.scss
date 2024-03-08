@@ -7,45 +7,61 @@
   src: url('/assets/fonts/CabinetGrotesk.ttf');
 }
 html{
-  font-size: 62.5%;
+  
+  font-size: 62.5%; // 1rem = 10px
+
+  @include respond(tab-land) {
+    // 1rem = 9px, (9/16) * 100
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 50%;
+  }
+
+  @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 75%;
+  }
 }
 body{
 font-family: $primary-font;
 }
 
 .heading-primary{
-  font-size: 12vw;
+  font-size: clamp(16vw, 17vw, 13vw);      
   font-weight: 400;
 line-height: 1;
 color: $color-white;
   text-transform: uppercase;
   font-family: $primary-font;
 
-  @include respond(phone){
-    font-size: 5rem;
-  }
+
  
 }
 .heading-secondary{
-  font-size: 9vw;
+  font-size:  clamp(8vw, 14vw, 6vw);
   font-weight: 400;
 line-height: 1.2;
 color: $color-border;
   font-family: $primary-font;
+  
 }
 .heading-tertiary{
-  font-size:  6vh ;
+  font-size:  4vw ;
   color: $color-white;
-  line-height: 1.2;
+  line-height: 1;
+  text-transform: uppercase;
   text-align: center;
   @include respond(tab-port){
     font-size: 10rem;
   }
   @include respond(big-phone){
-    font-size: 8rem;
+    font-size: 14rem;
   }
   @include respond(phone){
-    font-size: 5rem;
+    font-size: 7rem;
   }
 }
 .heading-university{
@@ -53,7 +69,7 @@ color: $color-border;
   color: $color-border;
   font-family: $primary-font;
   @include respond(tab-land) {
-    text-align: center;
+  
    }
 }
 .paragraph{

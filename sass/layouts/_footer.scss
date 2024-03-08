@@ -20,7 +20,7 @@
       }
 
       @include respond(tab-port) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:  1fr;
       }
       @include respond(sm-phone) {
       grid-template-columns: 1fr;

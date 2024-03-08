@@ -52,7 +52,9 @@
     display: grid;
     grid-template-columns: 1.5fr 1.5fr;
     gap: 8rem;
-
+br{
+  display: none;
+}
     @include respond(big-phone) {
       display: flex;
       flex-direction: column;
@@ -132,7 +134,11 @@
   @include respond(tab-port) {
     padding: 4rem 1rem;
    }
+ 
   &__wrapper {
+    h3{
+      text-align: center;
+    }
     &__main {
       display: grid;
       grid-template-columns: 1fr 1fr;
