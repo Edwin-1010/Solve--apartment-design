@@ -1,7 +1,7 @@
 .navigation {
   // display: none;
 
-  padding: 1rem 6rem;
+  padding: 7rem 6rem;
   font-family: $secondary-font;
   font-weight: 400;
   position: relative;
@@ -39,11 +39,29 @@
       justify-content: center;
       align-items: center;
 
-      &--icon {
-        height: 15rem;
+      &__button{
+        height: 5rem;
         width: 5rem;
-        color: $color-white;
+        background-color: red;
+        display: flex;justify-content: center;align-items: center;
+        &--icon{
+          display: block;
+          height: 2px;
+          width: 100%;
+          background-color: $color-white;
+          position: relative;
+          
+        }
       }
-    }
-  }
+      
+      }
+      .navigation__button--icon::after{
+        height: 2px;
+        width: calc(100% + 20%);
+      position: absolute;
+      top: -2rem;
+      }
+      
 }
+}
+

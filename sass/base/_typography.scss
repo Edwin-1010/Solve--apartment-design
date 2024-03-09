@@ -78,10 +78,18 @@ color: $color-border;
   font-family: $secondary-font;
 line-height: 1.7;
 }
-.number{
-padding: .6rem .6rem;
+
+
+.number-con{
+  height: 2rem;width: 2rem;
   border-radius: 50%;
   background-color: $color-white;
-  text-align: center;
-  font-size: .9rem;
+  position: relative;
+
+  span{
+    font-size: 1rem;
+
+    position: absolute;
+    top: 50%;left: 50%;transform: translate(-50%, -50%);
+  }
 }
