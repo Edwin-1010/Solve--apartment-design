@@ -35,14 +35,16 @@
     }
     
     &__composition{
- 
+      height: 150vh;
             img{
                 width: 100%;
+                height: 100%;
             }
         }
     }
     
     .info {
+    
         padding: 12.8rem 26.1rem 20.7rem 25.9rem;
         background-color: $color-white;
         @include respond(tab-land) {
