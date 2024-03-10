@@ -4,14 +4,14 @@
   background-position: right;
   height: 130vh;
   @include respond(big-phone) {
-        height: 100vh;      
+    height: 100vh;
   }
   .header {
     &__main {
       &--textbox {
-       @include absCenter;
-       text-align: center;
-       padding-top: 16rem;
+        @include absCenter;
+        text-align: center;
+        padding-top: 16rem;
       }
     }
   }

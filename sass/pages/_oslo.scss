@@ -1,22 +1,21 @@
 .hero{
-
-    padding: 9.6rem 16rem;
+    padding: 3rem 16rem;
     @include respond(tab-port) {
-      padding: 3rem 4rem;
+      padding: 1rem 4rem;
        }
     &__wrapper{
       display: grid;
       grid-template-columns: 1.5fr 2.5fr;
-
+      margin-bottom: 4rem;
       @include respond(tab-port) {
        grid-template-columns: 1fr;
     
         
        }
         &--text-wrapper{
-            
+         
             h1{
-                margin-bottom: 4rem;
+                margin-bottom: 1rem;
                 color:$color-border ;
                 text-transform: none;
                 @include respond(tab-port) {
@@ -36,9 +35,7 @@
     }
     
     &__composition{
-            // height: 130vh;
-            background-size: cover;
-            margin-top: 5rem;
+ 
             img{
                 width: 100%;
             }

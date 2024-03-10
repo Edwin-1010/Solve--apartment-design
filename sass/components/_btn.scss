@@ -44,9 +44,11 @@
 .link :link,
 .link:visited {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: $secondary-font;
   text-decoration: none;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
   color: $color-border;
 }
 .link:active,
@@ -63,5 +65,7 @@
 .image-link:active,
 .image-link:hover {
  
-  transition: all 0.1s ease-in;
+
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
 }

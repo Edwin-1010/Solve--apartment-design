@@ -22,10 +22,35 @@
     .box {
       display: flex;
       flex-direction: column;
+      &__wrapper{
+        position: relative;
+        .circle-con{
+          height: 8rem;
+          width: 8rem;
+          border-radius: 50%;
+          background-color: $color-border;
+          position: absolute;
+          top: 3rem;
+          z-index: 1;
+          right: 2rem;
+        
+          span{
+            font-size: 1rem;
+            color: $color-white;
+            text-align: center;
+          @include absCenter;
+          }
+        }
+        
+      }
       .text {
         text-align: center;
       }
-   
+   .composition{
+    position: relative;
+    
+    }
+   }
       img {
         width: 100%;
         border-radius: 50rem;
@@ -34,7 +59,7 @@
       }
     }
   }
-}
+
 
 .info {
   padding: 12.8rem 26.1rem 20.7rem 25.9rem;
@@ -113,6 +138,7 @@
     img {
       width: 100%;
       border-radius: 50%;
+      
       @include respond(tab-port) {
        border-radius: 30%;
          }
