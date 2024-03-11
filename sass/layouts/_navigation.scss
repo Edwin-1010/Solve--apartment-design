@@ -1,10 +1,13 @@
 .navigation {
+  
   padding: 5rem 6rem;
   font-family: $secondary-font;
   font-weight: 400;
   position: relative;
   color: $color-white;
-
+  @include respond(tab-port) {
+    display: none;
+  }
   &.dark {
     color: $color-border;
   }
@@ -13,10 +16,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    @include respond(tab-land) {
- 
-    }
 
     &--action {
       font-size: 1.4rem;
@@ -64,6 +63,7 @@
           }
         }
         &--button {
+          display: block;
           width: 5rem;
           height: 1.3rem;
           cursor: pointer;
@@ -94,19 +94,23 @@
       }
 
       &--button {
+  
         width: 5rem;
         height: 1.3rem;
         cursor: pointer;
-        display: flex;
+        // display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+
+        @include respond(tab-port) {
+          display: block;
+        }
         &--icon {
           position: relative;
           display: block;
           width: 100%;
           height: 1px;
           background-color: currentColor;
-   
 
           &::after {
             content: "";
@@ -122,5 +126,130 @@
         }
       }
     }
+  }
+}
+
+.mobile-navigation {
+  display: none;
+  
+  padding: 5rem 6rem;
+  font-family: $secondary-font;
+  font-weight: 400;
+  position: relative;
+  color: $color-white;
+  
+  
+  &.dark {
+    color: $color-border;
+  }
+  &__nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    
+    a {
+      font-size: 1.2rem;
+      line-height: 175%;
+      letter-spacing: 0.2em;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: inherit;
+    }
+    &--logo {
+      width: 7.5rem;
+      
+      img {
+        width: 100%;
+      }
+    }
+
+   
+    @include respond(tab-port) {
+      &--input:checked + &--button {
+      
+        .mobile-navigation__nav--button--icon {
+          transform: rotate(-45deg);
+
+          &::after {
+            width: 100%;
+            transform: rotate(-270deg);
+
+            top: 0;
+          }
+        }
+      }
+      &--button {
+        display: block;
+        width: 5rem;
+        height: 1.3rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+      
+        &--icon {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 1px;
+          background-color: $color-border;
+          
+
+          &::after {
+            content: "";
+            position: absolute;
+            background-color: currentColor;
+            transition: all 0.3s;
+            width: 70%;
+            top: 1.2rem;
+            right: 0;
+            display: block;
+            height: 1px;
+          }
+        }
+      }
+    }
+    
+    &--button {
+      
+      
+      width: 5rem;
+      height: 1.3rem;
+      cursor: pointer;
+      // display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      @include respond(tab-port) {
+        display: block;
+      }
+      &--icon {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: currentColor;
+
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: currentColor;
+          transition: all 0.3s;
+          width: 70%;
+          top: 1.2rem;
+          right: 0;
+          display: block;
+          height: 1px;
+        }
+      }
+    }
+  }
+}
+#mobile-navigation__nav--button{
+  display: none;
+ }
+@include respond(tab-port) {
+  .mobile-navigation{
+    display: block;
   }
 }
