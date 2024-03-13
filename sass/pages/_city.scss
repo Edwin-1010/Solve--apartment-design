@@ -61,6 +61,14 @@
       flex-direction: column;
       gap: 4rem;
 
+      p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+  
+        @include respond(tab-port) {
+          font-size: 3rem;
+          }
+      }
       br {
         display: none;
       }
@@ -82,12 +90,12 @@
       font-size: 20rem;
       color: $color-border;
       position: absolute;
-      top: 0;
-      left: -15%;
+  top: -26%;
+      left: 0;
       z-index: 1;
-      // @include respond(big-phone) {
-      //   font-size: 17rem;
-      // }
+      @include respond(big-phone) {
+        font-size: 20rem;
+      }
     }
     
       .composition {
@@ -95,10 +103,10 @@
         position: relative;
         width: 50rem;
         height: 50rem;
-        @include respond(big-phone) {
-          width: 40rem;
-          height: 40rem;
-        }
+        // @include respond(big-phone) {
+        //   width: 50rem;
+        //   height: 40rem;
+        // }
       }
       img {
      width: 100%;
@@ -109,25 +117,46 @@
 
   }
 .help {
-  display: none;
+
   padding: 12.8rem 17rem;
+  @include respond(tab-land) {
+    padding: 12rem 8rem;
+  }
   @include respond(tab-port) {
-    padding: 12rem 3rem;
+    padding: 12rem 5rem;
   }
   border-bottom: $color-border 1px solid;
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10rem;
-    align-content: flex-start;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      gap: 7.5rem;
+      }
+     
+      h3{
+        @include respond(tab-port) {
+          font-size: 8rem;
+          margin-bottom: 2rem;
+          }
+      }
     h4 {
       font-size: 4rem;
       color: $color-border;
       margin-bottom: 5rem;
+      @include respond(tab-port) {
+      font-size: 5rem;
+      }
     }
     p {
       font-size: 1.5rem;
       margin-bottom: 2rem;
+
+      @include respond(tab-port) {
+        font-size: 3rem;
+        }
     }
     a {
       display: inline-block;

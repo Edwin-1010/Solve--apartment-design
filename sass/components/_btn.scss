@@ -50,17 +50,29 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: $color-border;
+
+ 
+  
 }
-.link:active,
-.link:hover {
+.link:hover,
+.link:active {
   color: $color-grey-1;
+  
+}
+
+.link:hover{
+  transform: scale(1.1);
+}
+
+.link:hover{
+  transform: scale(.9);
 }
 .image-link,
 .image-link:link,
 .image-link:visited {
   display: inline-block;
  border-radius: 50%;
- 
+
 }
 .image-link:active,
 .image-link:hover {

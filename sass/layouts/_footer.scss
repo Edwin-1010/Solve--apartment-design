@@ -9,7 +9,7 @@
       padding: 7rem 7rem;
     }
     @include respond(big-phone) {
-      padding: 3rem 3rem;
+      padding: 5rem 3rem;
     }
     &--row {
       display: grid;
@@ -20,9 +20,9 @@
       }
 
       @include respond(tab-port) {
-        grid-template-columns:  1fr;
+        grid-template-columns: 1fr 1fr;
       }
-      @include respond(sm-phone) {
+      @include respond(phone) {
       grid-template-columns: 1fr;
       justify-items: center;
       }
@@ -44,7 +44,7 @@
           color: $color-border;
           text-transform: capitalize;
           @include respond(big-phone) {
-              font-size: 3rem;
+              font-size: 4rem;
               margin-bottom: 4rem;
           }
         
@@ -63,7 +63,12 @@
           cursor: pointer;
           letter-spacing: 1.9px;
           @include respond(tab-land) {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+         
+          }
+          @include respond(big-phone) {
+            font-size: 2rem;
             margin-bottom: 1.5rem;
          
           }

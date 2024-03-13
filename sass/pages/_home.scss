@@ -156,6 +156,7 @@
 .stores {
   // display: none;
   padding: 12rem 16rem;
+  border-bottom: $color-border 1px solid;
   @include respond(tab-land) {
    padding: 7rem 1rem;
   }
@@ -164,9 +165,11 @@
    }
  
   &__wrapper {
-    h3{
-      text-align: center;
-    }
+   h3{
+    @include respond(big-phone) {
+   text-align: center;
+     }
+   }
     &__main {
       display: grid;
       grid-template-columns: 1fr 1fr;
