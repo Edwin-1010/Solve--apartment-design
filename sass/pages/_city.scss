@@ -66,7 +66,7 @@
         margin-bottom: 2rem;
   
         @include respond(tab-port) {
-          font-size: 3rem;
+          font-size: 2.6rem;
           }
       }
       br {
@@ -77,7 +77,7 @@
 }
 .next {
   padding: 21rem 6rem;
-  border-bottom: $color-border 1px solid;
+  border-bottom: $color-background 1px solid;
   @include respond(tab-port) {
     padding: 12rem 1rem;
   }
@@ -125,7 +125,7 @@
   @include respond(tab-port) {
     padding: 12rem 5rem;
   }
-  border-bottom: $color-border 1px solid;
+  border-bottom: $color-background 1px solid;
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -155,7 +155,7 @@
       margin-bottom: 2rem;
 
       @include respond(tab-port) {
-        font-size: 3rem;
+        font-size: 2.6rem;
         }
     }
     a {

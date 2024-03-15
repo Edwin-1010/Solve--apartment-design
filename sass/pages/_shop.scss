@@ -1,0 +1,12 @@
+.shop-header{
+    padding: 2rem 2rem;
+   h1{
+display: flex;
+font-size: 19rem;
+justify-content: center;align-items: center;
+color: $color-border;
+padding: 3rem;
+border-bottom: 1px solid $color-background;
+border-top: 1px solid $color-background;
+   }
+}
