@@ -3,10 +3,100 @@
    h1{
 display: flex;
 font-size: 19rem;
-justify-content: center;align-items: center;
+justify-content: center;
+align-items: center;
 color: $color-border;
 padding: 3rem;
 border-bottom: 1px solid $color-background;
-border-top: 1px solid $color-background;
+padding-bottom: 5rem;
+   }
+   .shop-nav{
+border-bottom: 1px solid $color-background;
+&__nav{
+   padding: 2rem 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   gap: 5rem;
+li{
+list-style: none;
+   a{
+      display: inline-block;
+      color: $color-border;
+      font-size: 1.5rem;
+      font-family: $secondary-font;
+
+      @include respond(big-phone) {
+         font-size: 2rem;
+       }
    }
 }
+}
+   }
+}
+.about {
+   padding: 4rem 15rem;
+   border-bottom: $color-background 1px solid;
+ 
+   @include respond(tab-land) {
+     padding: 5rem 5rem;
+   }
+   &__main {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     gap: 7.4rem;
+     padding: 4rem 1rem;
+ 
+     @include respond(tab-land) {
+       grid-template-columns: 1fr 1fr 1fr;
+       gap: 3rem;
+     }
+ 
+     @include respond(big-phone) {
+       grid-template-columns:  1fr 1fr;
+     }
+     @include respond(phone) {
+      grid-template-columns:   1fr;
+    }
+     .box {
+       display: flex;
+       flex-direction: column;
+       &__wrapper{
+         position: relative;
+         .circle-con{
+           height: 8rem;
+           width: 8rem;
+           border-radius: 50%;
+           background-color: $color-border;
+           position: absolute;
+           top: 3rem;
+           z-index: 1;
+           right: 2rem;
+         
+           span{
+             font-size: 1rem;
+             color: $color-white;
+             text-align: center;
+           @include absCenter;
+           }
+         }
+         
+       }
+       .text {
+         text-align: center;
+       }
+    .composition{
+     position: relative;
+     
+     }
+    }
+       img {
+         width: 100%;
+         border-radius: 50rem;
+         margin-bottom: 3.2rem;
+        
+       }
+     }
+   }
+ 

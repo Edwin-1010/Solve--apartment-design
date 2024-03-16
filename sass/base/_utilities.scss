@@ -26,6 +26,9 @@
 .small{
   font-size: 1.7rem;
   margin-top: 2rem;
+  @include respond(tab-land) {
+    font-size: 2rem;
+  }
 }
 .blue{
   background-color: blue !important;

@@ -17,7 +17,7 @@
   text-shadow: 0px 0px 6px #fff;
   box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
   transition: all 0.4s ease 0s
-lett
+
 }
 
 .btn:active,
@@ -81,7 +81,8 @@ lett
 .image-link:visited {
   display: inline-block;
  border-radius: 50%;
-
+ transform: scale(1);
+ transition: all 0.4s ease-in;
 }
 .image-link:active,
 .image-link:hover {
