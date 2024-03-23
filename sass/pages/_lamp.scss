@@ -1,0 +1,97 @@
+.lamp-wrapper {
+  // display: grid;
+  // grid-template-columns: 0.9fr 1fr;
+  display: flex;
+  height: 100vh;
+  @include respond(tab-land) {
+flex-direction: column-reverse;
+margin-bottom: 6rem;
+height: 100%
+  }
+  .nav-wrapper{
+    @include absCenter;
+  }
+  .image-box {
+    flex: 1.4;
+height: 100vh;
+@include respond(tab-port) {
+height: 70vh;
+}
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .text-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 14rem;
+    @include respond(tab-port) {
+      padding: 4rem 5rem;
+    }
+    .shop-nav {
+      margin-top: 5rem;
+      border-top: .7px solid $color-background;
+      border-bottom: .7px solid $color-background;
+      &__nav {
+        padding: 2rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5rem;
+       
+        
+        li {
+          list-style: none;
+          a {
+            display: inline-block;
+            color: $color-border;
+            font-size: 1.5rem;
+            font-family: $secondary-font;
+            text-transform: uppercase;
+            @include respond(big-phone) {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.info {
+  padding: 19.8rem 26.1rem 9.7rem 20.9rem;
+  background-color: $color-white;
+  border-bottom: 1px solid $color-background;
+  @include respond(tab-land) {
+    padding: 4rem 12rem;
+  }
+  @include respond(tab-port) {
+    padding: 4rem 9rem;
+  }
+  @include respond(big-phone) {
+    padding: 4rem 5rem;
+  }
+  li {
+    list-style: unset;
+    padding-left: 1rem;
+margin-left: 3rem;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    gap: 8rem;
+
+    @include respond(big-phone) {
+      display: flex;
+      flex-direction: column;
+
+      br{
+        display: none;
+      }
+    }
+  }
+}

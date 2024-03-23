@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <nav class="navigation dark">
+      <ul class="navigation__nav">
+        <a href="#" class="navigation__nav--action"> Look Book </a>
+        <figure class="navigation__nav--logo">
+          <a href="/">
+            <img src="/assets/logo/logo-dark-1x.png" alt="logo"
+          /></a>
+        </figure>
+        <ul class="navigation__nav--nav">
+          <li class="navigation__nav--items"><a href="#"> Shop </a></li>
+          <li class="navigation__nav--items">
+            <a href="#"> Cart </a>
+            <div class="number-con-black"><span class="number">0</span></div>
+          </li>
+
+          <li class="navigation__nav--items">
+            <input
+              type="checkbox"
+              id="navigation__nav--items--button"
+              class="navigation__nav--items--input"
+            />
+            <label
+              for="navigation__nav--items--button"
+              class="navigation__nav--items--button"
+            >
+              <span class="navigation__nav--items--button--icon"></span>
+            </label>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+
+    <nav class="mobile-navigation dark">
+      <input
+        type="checkbox"
+        id="mobile-navigation__nav--button"
+        class="mobile-navigation__nav--input"
+      />
+      <label
+        for="mobile-navigation__nav--button"
+        class="mobile-navigation__nav--button"
+      >
+        <span class="mobile-navigation__nav--button--icon"></span>
+      </label>
+      <ul class="mobile-navigation__nav">
+        <figure class="mobile-navigation__nav--logo">
+          <img src="/assets/logo/logo-dark-1x.png" alt="logo" />
+        </figure>
+
+        <ul class="mobile-navigation__nav--nav">
+          <li>
+            <a href="#" class="mobile-navigation__nav--items"> LOOKBOOK </a>
+          </li>
+
+          <li class="mobile-navigation__nav--nav--items">
+            <a href="#"> Shop </a>
+          </li>
+          <li class="navigation__nav--items"><a href="#"> home </a></li>
+          <li class="mobile-navigation__nav--nav--items">
+            <a href="#"> Cart </a>
+            <div class="number-con"><span class="number">0</span></div>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+    <section class="contact">
+      <h1 class="heading-primary">Contact</h1>
+      <div class="contact__wrapper">
+        <div class="contact__wrapper--footer">
+          <div class="contact__wrapper--footer--row">
+            <h3>SOCIAL</h3>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Faceook</a></li>
+              <li><a href="#">TikTok</a></li>
+            </ul>
+          </div>
+          <div class="contact__wrapper--footer--row">
+            <h3>CONTACT</h3>
+            <ul>
+              <li><a href="">info@example.com</a></li>
+              <li><a href="#">+23490656877</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact__wrapper--form">
+          <form>
+            <p>Name</p>
+            <input type="text"  class="input-field" name="full name" placeholder="Full name" />
+            <p>Email</p>
+            <input type="email"    class="input-field" name="Email" placeholder="Email Address" />
+            <p>Messages</p>
+<textarea type="text" class="Messages" placeholder="Your Messages"></textarea>
+          </form>
+          <a href="#" class="btn-black">
+            <span>Submit Message</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="stores">
+        <div class="stores__wrapper">
+          <h3 class="heading-university">Our Stores</h3>
+          <div class="stores__wrapper__main">
+            <div class="stores__wrapper__main--box">
+              <figure class="stores__wrapper__main--box--composition">
+                <img src="/assets/images/store-1.jpg" alt="image" />
+              </figure>
+              <div class="stores__wrapper__main--box--text">
+                <h4>Hamburg</h4>
+                <p>
+                  solve store, <br />
+                  22507 Hamburg
+                </p>
+                <a href="" class="link"
+                  >See Directions
+                  <img src="/assets/logo/arrow.svg" alt="arrow" class="arrow"
+                /></a>
+              </div>
+            </div>
+
+            <div class="stores__wrapper__main--box">
+              <figure class="stores__wrapper__main--box--composition">
+                <img src="/assets/images/store-2.jpg" alt="image" />
+              </figure>
+              <div class="stores__wrapper__main--box--text">
+                <h4>Lisbon</h4>
+                <p>
+                  solve store, <br />
+                  1049 Lisbon
+                </p>
+                <a href="" class="link"
+                  >See Directions
+                  <img src="/assets/logo/arrow.svg" alt="arrow" class="arrow"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__wrapper--row">
+            <div class="footer__wrapper--row--col">
+              <h3>SOLVE</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Journal</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+            </div>
+  
+            <div class="footer__wrapper--row--col">
+              <h3>SHOP</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">LookBook</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+  
+            <div class="footer__wrapper--row--col">
+              <h3>WEBFLOW</h3>
+              <ul>
+                <li><a href="#">StyleGuide</a></li>
+                <li><a href="#">Licenseing</a></li>
+                <li><a href="#">ChangeLog</a></li>
+              </ul>
+            </div>
+  
+            <div class="footer__wrapper--row--col span">
+              <h3>SOCIAL</h3>
+              <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">TikTok</a></li>
+              </ul>
+            </div>
+  
+            <p></p>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>

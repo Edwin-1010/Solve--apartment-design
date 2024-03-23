@@ -142,6 +142,7 @@
   font-weight: 400;
   position: relative;
   color: $color-white;
+
   
   
   &.dark {
@@ -186,6 +187,8 @@ font-size: 3rem;
   height: 100vh;
   width: 40rem;
 right: -56rem;
+transition: right 500ms ease;
+
 
   &--items {
     display: flex;
@@ -238,7 +241,7 @@ right: -56rem;
           }
         }
       }
-      &--input:checked ~ .mobile-navigation__nav--nav {
+      &--input:checked ~ .mobile-navigation__nav .mobile-navigation__nav--nav {
         right: 0 !important;
       }
       &__button {
@@ -250,7 +253,7 @@ right: -56rem;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        z-index: 10;
+
       
         &--icon {
 
@@ -283,7 +286,8 @@ right: -56rem;
       // display: flex;
       justify-content: flex-start;
       align-items: flex-start;
-
+      z-index: 99;
+      
       @include respond(tab-port) {
         display: block;
       }
