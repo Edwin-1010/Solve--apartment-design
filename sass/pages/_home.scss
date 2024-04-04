@@ -59,7 +59,7 @@
 
 .info {
   padding: 12.8rem 26.1rem 20.7rem 25.9rem;
-
+  background-color: #ededed !important;
   @include respond(tab-land) {
     padding: 4rem 12rem;
   }

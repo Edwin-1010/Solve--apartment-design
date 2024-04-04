@@ -1,6 +1,7 @@
 .contact {
 background-color: #ededed;
   border-bottom: 1px solid $color-background;
+  padding: 4rem 2rem;
   h1 {
     padding: 2.5rem 2rem;
     text-align: center;
@@ -9,17 +10,23 @@ background-color: #ededed;
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    align-content: center;
-    gap: 25rem;
-    padding: 7rem 13rem;
+    padding: 5rem 4rem;
+
+justify-content: space-between;
     margin-bottom: 6rem;
-    @include respond(tab-land) {
+    @include respond(tab-port) {
       display: flex;
       flex-direction: column-reverse;
     }
+    @include respond(big-phone) {
+padding: 5rem 4rem;
+gap: 0;
+    }
     &--footer {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+justify-items: center;
+gap: 9rem;
 
       &--row {
         @include respond(tab-land) {
@@ -82,8 +89,10 @@ background-color: #ededed;
         height: 5.5rem;
         padding-left: 2rem;
         border: 1px solid #000;
-        @include respond(tab-land) {
-        }
+        @include respond(big-phone) {
+          width: 55rem;       
+
+                }
       }
       .input-field::placeholder {
         font-family: $secondary-font;
@@ -94,6 +103,11 @@ background-color: #ededed;
         padding-left: 2rem;
         width: 60rem;
         height: 15rem;
+        @include respond(big-phone) {
+          width: 55rem;
+          height: 20rem;
+          font-size: 6rem;
+                }
       }
       .Messages::placeholder {
         font-family: $secondary-font;
@@ -101,6 +115,7 @@ background-color: #ededed;
         font-size: 1.4rem;
         padding-top: 1.4rem;
       }
+   
     }
   }
 }

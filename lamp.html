@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html lang="en">
+  <!DOCTYPE html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,70 +14,76 @@
   <body>
     <div class="container-2">
       <div class="nav-wrapper overlay">
-  <nav class="navigation dark ">
-    <ul class="navigation__nav">
-      <a href="#" class="navigation__nav--action"> LOOKBOOK </a>
+        <nav class="navigation dark">
+          <ul class="navigation__nav">
+            <a href="#" class="navigation__nav--action"> LOOKBOOK </a>
 
-      <figure class="navigation__nav--logo">
-        <img src="/assets/logo/logo-dark-1x.png" alt="logo" />
-      </figure>
-      <ul class="navigation__nav--nav">
-        <li class="navigation__nav--items"><a href="/shop.html"> Shop </a></li>
+            <figure class="navigation__nav--logo">
+              <a href="index.html">
+                <img src="/assets/logo/logo-dark-1x.png" alt="logo" />
+              </a>
+            </figure>
+            <ul class="navigation__nav--nav">
+              <li class="navigation__nav--items">
+                <a href="/shop.html"> Shop </a>
+              </li>
 
-        <li class="navigation__nav--items">
-          <a href="#"> Cart </a>
-          <div class="number-con-black"><span class="number">0</span></div>
-        </li>
+              <li class="navigation__nav--items">
+                <a href="#"> Cart </a>
+                <div class="number-con-black">
+                  <span class="number">0</span>
+                </div>
+              </li>
 
-        <li class="navigation__nav--items">
+              <li class="navigation__nav--items">
+                <input
+                  type="checkbox"
+                  id="navigation__nav--items--button"
+                  class="navigation__nav--items--input"
+                />
+                <label
+                  for="navigation__nav--items--button"
+                  class="navigation__nav--items--button"
+                >
+                  <span class="navigation__nav--items--button--icon"></span>
+                </label>
+              </li>
+            </ul>
+          </ul>
+        </nav>
+
+        <nav class="mobile-navigation dark">
           <input
             type="checkbox"
-            id="navigation__nav--items--button"
-            class="navigation__nav--items--input"
+            id="mobile-navigation__nav--button"
+            class="mobile-navigation__nav--input"
           />
           <label
-            for="navigation__nav--items--button"
-            class="navigation__nav--items--button"
+            for="mobile-navigation__nav--button"
+            class="mobile-navigation__nav--button"
           >
-            <span class="navigation__nav--items--button--icon"></span>
+            <span class="mobile-navigation__nav--button--icon"></span>
           </label>
-        </li>
-      </ul>
-    </ul>
-  </nav>
+          <ul class="mobile-navigation__nav">
+            <figure class="mobile-navigation__nav--logo">
+              <img src="/assets/logo/logo-dark-1x.png" alt="logo" />
+            </figure>
 
-  <nav class="mobile-navigation dark">
-    <input
-      type="checkbox"
-      id="mobile-navigation__nav--button"
-      class="mobile-navigation__nav--input"
-    />
-    <label
-      for="mobile-navigation__nav--button"
-      class="mobile-navigation__nav--button"
-    >
-      <span class="mobile-navigation__nav--button--icon"></span>
-    </label>
-    <ul class="mobile-navigation__nav">
-      <figure class="mobile-navigation__nav--logo">
-        <img src="/assets/logo/logo-dark-1x.png" alt="logo" />
-      </figure>
+            <ul class="mobile-navigation__nav--nav">
+              <a href="#" class="mobile-navigation__nav--items"> LOOKBOOK </a>
 
-      <ul class="mobile-navigation__nav--nav">
-        <a href="#" class="mobile-navigation__nav--items"> LOOKBOOK </a>
-
-        <li class="mobile-navigation__nav--nav--items">
-          <a href="#"> Shop </a>
-        </li>
-        <li class="navigation__nav--items"><a href="#"> home </a></li>
-        <li class="mobile-navigation__nav--nav--items">
-          <a href="#"> Cart </a>
-          <div class="number-con"><span class="number">0</span></div>
-        </li>
-      </ul>
-    </ul>
-  </nav>
-</div>
+              <li class="mobile-navigation__nav--nav--items">
+                <a href="#"> Shop </a>
+              </li>
+              <li class="navigation__nav--items"><a href="#"> home </a></li>
+              <li class="mobile-navigation__nav--nav--items">
+                <a href="#"> Cart </a>
+                <div class="number-con"><span class="number">0</span></div>
+              </li>
+            </ul>
+          </ul>
+        </nav>
+      </div>
 
       <div class="lamp-wrapper">
         <figure class="image-box">
@@ -88,143 +94,210 @@
             Elegant
             <br />lamp
           </h2>
-          <p class="paragraph small    ">$ 129.00 USD</p>
+          <p class="paragraph small">$ 129.00 USD</p>
           <p class="paragraph mt-small">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
             ut amet sit aliquam mollitia dicta telly teddy
           </p>
-          <div class="button-box">
+          <div class="text-box__button-box">
             <a href="#" class="select-btn">1</a>
-            
-            <input type="checkbox" id="btn-check" class="btn-check__input" />
-            <label for="btn-check"  class="btn-check" >
 
-              <a href="#" class="btn-black">
+            <input type="checkbox" id="check" />
+            <label for="check">
+              <p class="btn-black">
                 <span>add to cart</span>
-              </a>
+              </p>
+
+              <h1 class="small-p">Close</h1>
             </label>
-          </div>
-          <nav class="shop-nav">
-            <ul class="shop-nav__nav">
-              <li><a href="#">Details</a></li>
-              <li><a href="/lamp.html">Delivery</a></li>
-              <li><a href="#">REturns</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
 
-    <section class="info">
-      <div class="info__wrapper">
-        <div class="wrapper--text">
-          <h2 class=" heading-university">Description</h2>
-        </div>
-        <div class="wrapper--paragraph">
-          <p class="paragraph ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            sequi in similique ipsam quidem totam fugit commodi tenetur,
-            distinctio enim accusamus et reprehenderit illo possimus deserunt
-            blanditiis minus explicabo quas. Consequuntur architecto maiores
-            repudiandae dolor sunt. Minima voluptatem, cum perferendis commodi
-            ipsam autem magni nihil dolore Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            <br />
-            <br>
+            <div class="cart">
+              <div class="cart__wrapper">
+                <label for="check">
+                  <h1 class="small-p">Close</h1>
+                </label>
+                <div class="cart__wrapper--h1">
+                  <h1>Cart</h1>
+                </div>
+                <div class="cart__wrapper--cover">
+                  <div class="cart__wrapper--cover--nav">
+                    <div class="cart__wrapper--cover--nav--image">
+                      <div class="composition">
+                        <img src="/assets/images/component-1.jpg" alt="hero" />
+                      </div>
+                      <div class="text">
+                        <p class="par-small">Mordern Chair</p>
+                        <p class="par-small">$ 234.00 USD</p>
+                        <p class="par">Remove</p>
+                      </div>
+                    </div>
 
-            <ul>
+                    <div class="cart__wrapper--cover--nav--button-box">
+                      <a href="#" class="select-btn-2">1</a>
+                    </div>
+                  </div>
+                  <div class="cart__wrapper--cover--nav-2">
+                    <div class="cart__wrapper--cover--nav--image">
+                      <div class="composition">
+                        <img src="/assets/images/component-1.jpg" alt="hero" />
+                      </div>
+                      <div class="text">
+                        <p class="par-small">Mordern Chair</p>
+                        <p class="par-small">$ 234.00 USD</p>
+                        <p class="par">Remove</p>
+                      </div>
+                    </div>
 
-              <li><p class="paragraph  ">Porem ipsum, dolor sit amet consectetur adipisicing.</p></li>
-              <li><p class="paragraph ">Dorem ipsum, dolor sit amet .</p></li>
-              <li><p class="paragraph ">Qorem ipsum, dolor sit amet consectetur.</p></li>
-            </ul>
-
-        </div>
-      </div>
-    </section>
-    <section class="about">
-      <div class="about__wrapper">
-        <h2 class="heading-secondary center">Related</h2>
-        <div class="about__main">
-          <div class="box">
-            <div class="box__wrapper">
-              <div class="circle-con">
-                <span class="circle"><h1>New</h1></span>
+                    <div class="cart__wrapper--cover--nav--button-box">
+                      <a href="#" class="select-btn-2">1</a>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div class="cart__bottom">
+                <div class="cart__bottom--text-box">
+                  <p class="par">Subtotal</p>
+                  <p class="par">$68.00 USD</p>
+                </div>
+                <div class="cart__bottom--button-box">
+                  <a href="#" class="btn-black">Continue to Checkout</a>
+                </div>
+              </div>
+            </div>
+            <div class="cart__backdrop"></div>
+
+            <nav class="shop-nav">
+              <ul class="shop-nav__nav">
+                <li><a href="#">Details</a></li>
+                <li><a href="/lamp.html">Delivery</a></li>
+                <li><a href="#">REturns</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+
+      </div>
+
+      <section class="info">
+        <div class="info__wrapper">
+          <div class="wrapper--text">
+            <h2 class="heading-university">Description</h2>
+          </div>
+          <div class="wrapper--paragraph">
+            <p class="paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              sequi in similique ipsam quidem totam fugit commodi tenetur,
+              distinctio enim accusamus et reprehenderit illo possimus deserunt
+              blanditiis minus explicabo quas. Consequuntur architecto maiores
+              repudiandae dolor sunt. Minima voluptatem, cum perferendis commodi
+              ipsam autem magni nihil dolore Lorem ipsum dolor sit amet
+              consectetur adipisicing elit.
+              <br />
+              <br />
+            </p>
+
+            <ul>
+              <li>
+                <p class="paragraph">
+                  Porem ipsum, dolor sit amet consectetur adipisicing.
+                </p>
+              </li>
+              <li><p class="paragraph">Dorem ipsum, dolor sit amet .</p></li>
+              <li>
+                <p class="paragraph">
+                  Qorem ipsum, dolor sit amet consectetur.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__wrapper">
+          <h2 class="heading-secondary center">Related</h2>
+          <div class="about__main">
+            <div class="box">
+              <div class="box__wrapper">
+                <div class="circle-con">
+                  <span class="circle"><h1>New</h1></span>
+                </div>
+                <figure class="composition">
+                  <img src="/assets/images/component-1.jpg" alt="chairs" />
+                </figure>
+              </div>
+              <div class="text">
+                <p class="paragraph">Mordern Chair</p>
+                <p class="paragraph small">$234.00 USD</p>
+              </div>
+            </div>
+
+            <div class="box">
               <figure class="composition">
-                <img src="/assets/images/component-1.jpg" alt="chairs" />
+                <img src="/assets/images/component-2.jpg" alt="chairs" />
               </figure>
+              <div class="text">
+                <p class="paragraph">Elegant Lamp</p>
+                <p class="paragraph small">$234.00 USD</p>
+              </div>
             </div>
-            <div class="text">
-              <p class="paragraph">Mordern Chair</p>
-              <p class="paragraph small">$234.00 USD</p>
-            </div>
-          </div>
-
-          <div class="box">
-            <figure class="composition">
-              <img src="/assets/images/component-2.jpg" alt="chairs" />
-            </figure>
-            <div class="text">
-              <p class="paragraph">Elegant Lamp</p>
-              <p class="paragraph small">$234.00 USD</p>
-            </div>
-          </div>
-          <div class="box">
-            <figure class="composition">
-              <img src="/assets/images/component-3.jpg" alt="chairs" />
-            </figure>
-            <div class="text">
-              <p class="paragraph">Black Chair</p>
-              <p class="paragraph small">$234.00 USD</p>
+            <div class="box">
+              <figure class="composition">
+                <img src="/assets/images/component-3.jpg" alt="chairs" />
+              </figure>
+              <div class="text">
+                <p class="paragraph">Black Chair</p>
+                <p class="paragraph small">$234.00 USD</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__wrapper--row">
-          <div class="footer__wrapper--row--col">
-            <h3>SOLVE</h3>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Rooms</a></li>
-              <li><a href="#">Journal</a></li>
-              <li><a href="#">Contacts</a></li>
-            </ul>
-          </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__wrapper--row">
+            <div class="footer__wrapper--row--col">
+              <h3>SOLVE</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Journal</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+            </div>
 
-          <div class="footer__wrapper--row--col">
-            <h3>SHOP</h3>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Rooms</a></li>
-              <li><a href="#">LookBook</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
+            <div class="footer__wrapper--row--col">
+              <h3>SHOP</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">LookBook</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
 
-          <div class="footer__wrapper--row--col">
-            <h3>WEBFLOW</h3>
-            <ul>
-              <li><a href="#">StyleGuide</a></li>
-              <li><a href="#">Licenseing</a></li>
-              <li><a href="#">ChangeLog</a></li>
-            </ul>
-          </div>
+            <div class="footer__wrapper--row--col">
+              <h3>WEBFLOW</h3>
+              <ul>
+                <li><a href="#">StyleGuide</a></li>
+                <li><a href="#">Licenseing</a></li>
+                <li><a href="#">ChangeLog</a></li>
+              </ul>
+            </div>
 
-          <div class="footer__wrapper--row--col span">
-            <h3>SOCIAL</h3>
-            <ul>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">TikTok</a></li>
-            </ul>
-          </div>
+            <div class="footer__wrapper--row--col span">
+              <h3>SOCIAL</h3>
+              <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">TikTok</a></li>
+              </ul>
+            </div>
 
-          <p></p>
+            <p></p>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

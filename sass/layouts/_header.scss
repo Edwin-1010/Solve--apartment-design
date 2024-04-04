@@ -3,6 +3,7 @@
   background-size: cover;
   background-position: right;
   height: 130vh;
+  overflow: hidden;
   @include respond(big-phone) {
     height: 100vh;
   }
