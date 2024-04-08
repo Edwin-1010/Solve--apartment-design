@@ -1,18 +1,24 @@
 .lamp-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100vh;
+  height: 100%;
+  overflow: hidden;
 
   @include respond(tab-land) {
     display: flex;
     flex-direction: column-reverse;
-    height: 70vh;
+    height: 160vh;
+  }
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 175vh;
   }
 
   .image-box {
-    height: 100vh;
-    @include respond(tab-port) {
-      height: 70vh;
+
+    @include respond(tab-land) {
+height: 70vh;
     }
     img {
       width: 100%;
@@ -21,10 +27,14 @@
   }
 
   .text-box {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 8rem 14rem;
+    @include respond(tab-port) {
+      height: 100%;
+    }
     &__button-box {
       #check {
         appearance: none;
